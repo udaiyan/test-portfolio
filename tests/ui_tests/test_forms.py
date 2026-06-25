@@ -30,8 +30,8 @@ class TestForms:
 
         page.click("#submit-btn")
 
-        # Wait a moment for validation to run
-        page.wait_for_timeout(100)
+        # Wait for error messages to appear
+        page.wait_for_selector("#name-error:not(:empty)", timeout=2000)
 
         # Check that error messages are displayed
         expect(page.locator("#name-error")).to_contain_text("required")
@@ -48,8 +48,8 @@ class TestForms:
 
         page.click("#submit-btn")
 
-        # Wait for validation
-        page.wait_for_timeout(100)
+        # Wait for error message to appear
+        page.wait_for_selector("#email-error:not(:empty)", timeout=2000)
 
         expect(page.locator("#email-error")).to_contain_text("valid email")
 
@@ -116,8 +116,8 @@ class TestForms:
         # Submit empty form to trigger errors
         page.click("#submit-btn")
 
-        # Wait for validation
-        page.wait_for_timeout(100)
+        # Wait for error to appear
+        page.wait_for_selector("#name-error:not(:empty)", timeout=2000)
 
         # Verify errors are shown
         expect(page.locator("#name-error")).not_to_be_empty()
