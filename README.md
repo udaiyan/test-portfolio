@@ -233,6 +233,23 @@ This is a demonstration project. Feel free to:
 - Add more test scenarios
 - Enhance the UI/API features
 
+## 🔒 Security Note
+
+This is a **demonstration project** for educational purposes:
+- CORS is set to allow all origins (`*`) for ease of testing
+- In-memory database (data is not persisted)
+- No authentication or authorization implemented
+- Not intended for production use
+
+**For production deployments, implement:**
+- Proper CORS origin restrictions
+- Authentication/authorization
+- Input validation and sanitization
+- Rate limiting
+- HTTPS/SSL
+- Persistent database with proper security
+- Environment-based configuration
+
 ## 📄 License
 
 This project is created for demonstration and educational purposes.

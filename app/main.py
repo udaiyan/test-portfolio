@@ -7,10 +7,10 @@ import uvicorn
 
 app = FastAPI(title="Testing Demo API")
 
-# CORS middleware for local development
+# CORS middleware - DEMO ONLY: In production, replace "*" with specific origins
 app.add_middleware(
     CORSMiddleware,
-    allow_origins=["*"],
+    allow_origins=["*"],  # For demo/testing - restrict to specific origins in production
     allow_credentials=True,
     allow_methods=["*"],
     allow_headers=["*"],
