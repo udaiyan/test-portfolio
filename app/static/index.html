@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Testing Demo - Home</title>
+    <link rel="stylesheet" href="/styles.css">
+</head>
+<body>
+    <nav class="navbar">
+        <div class="container">
+            <h1 class="logo">Testing Demo</h1>
+            <ul class="nav-links">
+                <li><a href="/" class="active">Home</a></li>
+                <li><a href="/form.html">Contact Form</a></li>
+                <li><a href="/about.html">About</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <main class="container">
+        <section class="hero">
+            <h2>Welcome to the Testing Demo</h2>
+            <p>This is a demonstration project showcasing pytest and Playwright testing capabilities.</p>
+        </section>
+
+        <section class="dynamic-section">
+            <h3>Dynamic Content</h3>
+            <p>Click the button below to load data from the API:</p>
+            <button id="load-data-btn" class="btn btn-primary">Load Data</button>
+            <button id="toggle-content-btn" class="btn btn-secondary">Toggle Content</button>
+
+            <div id="data-container" class="data-container" style="display: none;">
+                <h4>Items from API:</h4>
+                <ul id="items-list"></ul>
+            </div>
+
+            <div id="toggle-content" class="toggle-content" style="display: none;">
+                <p>This content can be toggled on and off!</p>
+            </div>
+        </section>
+
+        <section class="features">
+            <h3>Features</h3>
+            <div class="feature-grid">
+                <div class="feature-card">
+                    <h4>UI Testing</h4>
+                    <p>Playwright tests for navigation, forms, and dynamic content</p>
+                </div>
+                <div class="feature-card">
+                    <h4>API Testing</h4>
+                    <p>REST API tests with pytest and requests library</p>
+                </div>
+                <div class="feature-card">
+                    <h4>CI/CD Ready</h4>
+                    <p>GitHub Actions workflow for automated testing</p>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="container">
+            <p>&copy; 2024 Testing Demo. Generic demonstration project.</p>
+        </div>
+    </footer>
+
+    <script src="/script.js"></script>
+</body>
+</html>

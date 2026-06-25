@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Testing Demo - About</title>
+    <link rel="stylesheet" href="/styles.css">
+</head>
+<body>
+    <nav class="navbar">
+        <div class="container">
+            <h1 class="logo">Testing Demo</h1>
+            <ul class="nav-links">
+                <li><a href="/">Home</a></li>
+                <li><a href="/form.html">Contact Form</a></li>
+                <li><a href="/about.html" class="active">About</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <main class="container">
+        <section class="about-section">
+            <h2>About This Demo</h2>
+
+            <div class="about-content">
+                <h3>Purpose</h3>
+                <p>
+                    This is a generic demonstration project showcasing a modern testing framework 
+                    using Python pytest and Playwright. It demonstrates both UI testing and API 
+                    testing capabilities in a simple, easy-to-understand format.
+                </p>
+
+                <h3>Technology Stack</h3>
+                <ul class="tech-list">
+                    <li><strong>Backend:</strong> FastAPI - Modern Python web framework</li>
+                    <li><strong>Frontend:</strong> Static HTML, CSS, and JavaScript</li>
+                    <li><strong>UI Testing:</strong> Playwright with pytest</li>
+                    <li><strong>API Testing:</strong> pytest with requests library</li>
+                    <li><strong>CI/CD:</strong> GitHub Actions</li>
+                </ul>
+
+                <h3>Testing Coverage</h3>
+                <ul class="feature-list">
+                    <li>✓ Navigation and page routing tests</li>
+                    <li>✓ Form validation and submission tests</li>
+                    <li>✓ Dynamic content loading tests</li>
+                    <li>✓ REST API endpoint tests (GET, POST, DELETE)</li>
+                    <li>✓ Health check and error handling tests</li>
+                </ul>
+
+                <h3>API Endpoints</h3>
+                <div class="api-docs">
+                    <code>GET /api/health</code> - Health check<br>
+                    <code>GET /api/items</code> - List all items<br>
+                    <code>POST /api/items</code> - Create a new item<br>
+                    <code>GET /api/items/{id}</code> - Get item by ID<br>
+                    <code>DELETE /api/items/{id}</code> - Delete item by ID
+                </div>
+
+                <h3>Project Structure</h3>
+                <p>
+                    Tests are organized in separate directories: <code>ui_tests/</code> for 
+                    Playwright browser tests and <code>api_tests/</code> for REST API tests. 
+                    This structure makes it easy to run specific test suites independently.
+                </p>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="container">
+            <p>&copy; 2024 Testing Demo. Generic demonstration project.</p>
+        </div>
+    </footer>
+</body>
+</html>
